@@ -23,7 +23,6 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['postgresql-symmetrical-68325']
-  adapter: postgresql
-  database: mydatabase
+  adapter: pg
+  database: db
   #database: db/production.sqlite3
