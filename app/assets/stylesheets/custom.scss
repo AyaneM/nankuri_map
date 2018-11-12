@@ -11,34 +11,28 @@ section {
   overflow: auto;
 }
 
-textarea {
-  resize: vertical;
-}
+
+/*textarea {resize: vertical;} */
 
 .center {
   text-align: center;
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
 p.resizeimage img {
   width: 100%;
   height: auto;
 }
 
+
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+.jumbotron h1 {
   line-height: 1;
-}
-
-h1 {
   font-size: 3em;
+  color: #191970;
   letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 60px;
 }
 
 /* header */
@@ -56,6 +50,7 @@ h1 {
   color: #fff;
   text-decoration: none;
 }
+
 
 /* footer */
 
@@ -75,3 +70,38 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+/* home */
+
+.example-shops p {
+  font-weight: bold;
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+  
+  p:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+    width: 0;
+    height: 0;
+    border-radius: 0.5em;
+  }  
+}
+  
+figcaption {
+  color: #9C9689;
+  font-weight: bold;
+}
+
+.recruit-form {
+  text-align: center;
+  p {
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
